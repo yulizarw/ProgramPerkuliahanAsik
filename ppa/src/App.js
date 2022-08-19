@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { Provider, useSelector } from "react-redux";
+import store from "./store/index";
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+  Link,
+} from "react-router-dom";
+
+//page
+import {LandingPage} from "./screen/LandingPage"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Provider store ={store}>
+        <Switch>
+          <Route exact path="/">
+            <LandingPage />
+          </Route>
+        </Switch>
+      </Provider>
+    </Router>
+
   );
 }
 
