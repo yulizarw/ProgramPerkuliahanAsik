@@ -12,17 +12,24 @@ import iconHandphone from '../asset/Icon/Communication/call.png'
 import iconEmail from '../asset/Icon/Communication/mail.png'
 
 //components
-import { GambarCarousel } from "../components/gambarCarousel";
+import { GambarCarousel } from "../components/header/gambarCarousel";
+import { NavbarLanding } from "../components/header/navbar";
+import {SearchInput} from "../components/header/searchInput"
+
 export const LandingPage = () => {
+
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
+    var box1width = (640 / w) * 100
+    var box1height = (48 / h) * 100
+    console.log(w)
+    console.log(h)
+
     return (
         <>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" style={{ height: '100vh' }}>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" >
+                <div class="carousel-inner" >
                     <div class="carousel-item active">
                         <img class="d-block w-100" src={gambar1} alt="First slide" />
                     </div>
@@ -33,22 +40,20 @@ export const LandingPage = () => {
                         <img class="d-block w-100" src="https://images.pexels.com/photos/7944238/pexels-photo-7944238.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Third slide" />
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-
             <div class='box1'>
-                <img class='iconHeaderRibbon' src={iconHandphone}></img>
+                <i class='fa fa-phone iconHeaderRibbon'></i>
                 <p class='textIconHeaderRibbon'>085810600103</p>
-                <img class='iconHeaderRibbon' src={iconEmail}></img>
+                <i class='fa fa-envelope mailIconHeaderRibbon' style={{ color: 'white' }}></i>
+                <p class='textMailIconHeaderRibbon'>infoppa@baik.or.id</p>
             </div>
-
+            <div class='iconNavbar'>
+                <img img src="https://www.canva.com/design/DAFFj7LU3Y0/PlaxO8u0CmGRUxrX1Kyq8A/view?utm_content=DAFFj7LU3Y0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" ></img>
+            </div>
+            {/* navbar */}
+            <SearchInput />
+            {/* <NavbarLanding /> */}
+            
         </>
     )
 }

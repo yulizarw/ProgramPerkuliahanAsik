@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  height: 100%;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,52 +9,212 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
+@media screen and (min-width: 200px) {
+}
+/* to set carousel height */
+.carousel-inner{
+  width:100%;
+  max-height: 1000px !important;
+}
+/* .carousel {
+  position:relative;
+	z-index:1;
+} */
+.box1 {
+  position: absolute;
+  /* width: 34.04vw; */
+  border-bottom: 2.55vw solid #5A98BF;
+  left:0px;
+  top: 0px;
+  font-size:16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-right:15px solid transparent;
+  white-space:no-wrap;
+  text-align:center;
+  max-width:200px;
+  min-width:34.04vw;
+}
+
+.iconHeaderRibbon {
+  position: absolute;
+  color:#fff;
+  /* width: 1.064vw; */
+  height: 2.94vh;
+  left: 4.223vw;
+  top: 0.833vw;
+  /* bottom:2.3vh; */
+  padding: 0;
+  font-size: 1vw;
+  min-width:1.064vw;
+  max-width:200px;
+}
+.textIconHeaderRibbon {
+  position: absolute;
+  /* width: 5.1vw; */
+  width:auto;
+  font-size: 0.85vw;
+  color:#fff;
+  left:5.63vw;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  top: 0.75vw;
+  /* line-height:calc(8px + 5vh); */
+  padding: 0
+  /* identical to box height, or 200% */
+  
+}
+.mailIconHeaderRibbon {
+  position: absolute;
+  /* left:13.65vw; */
+  left: 16.5vw;
+  width: 1.064vw;
+  height: 2.94vh;
+  /* right: 8.33%; */
+  top: 0.833vw;
+  font-size: 1vw;
+  padding: 0;
+  /* bottom: 16.67%; */
+}
+.textMailIconHeaderRibbon{
+  position: absolute;
+  /* width: 5.1vw; */
+  width:auto;
+  font-size: 0.85vw;
+  color:#fff;
+  /* left:15.063vw; */
+  left:18.2978vw;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  top: 0.75vw;
+  /* line-height:calc(8px + 5vh); */
+  padding: 0
+  /* identical to box height, or 200% */
+}
+
+.navbar {
+  position: absolute;
+  top:3vw;
+  width: 100%;
+  font-family: 'Arial';
+  font-style: normal;
+  margin-left: 10px;
+  margin-right: 1000px;
+}
+
+.logoAsik {
+  width:48px;
+  height: 48px;
+  border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+ 
+}
+.logoAsik:nth-child(1){
+  margin-left:0;
+}
+
+.form-control {
+  /* SearchBox */
+
+  box-sizing: border-box;
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 14px;
+  
+  position: absolute;
+  width: 215px;
+  height: 40px;
+  left: 1135px;
+  top: 16px;
+  background: transparent;
+  /* white */
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+
+  /* background */
+  background-image:url(./asset/Icon/magnifying-glass-solid.svg);
+  /* padding-left:25px; */
+  background-repeat: no-repeat;
+  background-position: 0.5rem 0.3rem;
+  background-size: 1.7rem;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 0.5rem;
+  padding-left:2.5rem
+}
+
+.form-control::placeholder {
+  color: white;
+
+}
+
+.form-control:active,
+.form-control:focus,
+.form-control:focus:active {
+  /* SearchBox */
+
+  box-sizing: border-box;
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 14px;
+  
+  position: absolute;
+  width: 215px;
+  height: 40px;
+  left: 1135px;
+  top: 16px;
+  background: transparent;
+  /* white */
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+
+  /* background */
+  background-image:url(./asset/Icon/magnifying-glass-solid.svg);
+  padding-left:25px;
+  background-repeat: no-repeat;
+  background-position: 0.5rem 0.3rem;
+  background-size: 1.7rem;
+  color: #FFFFFF;
+  width:215px;
+  padding: 0.5rem;
+  padding-left:2.5rem
+}
+
+.form-inline .form-control {
+  display: inline-block;
+  width: 215px;
+  vertical-align: middle;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-.box1 {
-  position: absolute;
-  width: 640px;
-  border-bottom: 48px solid #FFC400;
-  left: 0px;
-  top: 0px;
-  /* yellow */
-  
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-right: 50px solid transparent;
-  white-space:no-wrap;
-  text-align:center;
-}
 
-.iconHeaderRibbon {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 78px;
-  top: 14px;
-}
-.textIconHeaderRibbon {
-  position: absolute;
-  width: 96px;
-  height: 32px;
-  left: 106px;
-  top: 8px;
 
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  /* identical to box height, or 200% */
-  color: #193264;
-}
-.mailIconHeaderRibbon {
-  position: absolute;
-  left: 8.33%;
-  right: 8.33%;
-  top: 16.67%;
-  bottom: 16.67%;
-  background: #193264;
-}
