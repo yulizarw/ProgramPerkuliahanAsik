@@ -2,56 +2,67 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
+
+@media only screen and (max-width: 959px) {
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 767px) {
+}
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
+
+@media only screen and (max-width: 479px) {
+}
+
 @media screen and (min-width: 200px) {
 }
+
 /* to set carousel height */
-.carousel-inner{
-  width:100%;
+
+.carousel-inner {
+  width: 100%;
   max-height: 1000px !important;
 }
-/* .carousel {
-  position:relative;
-	z-index:1;
-} */
+
 .box1 {
   position: absolute;
   /* width: 34.04vw; */
-  border-bottom: 2.55vw solid #5A98BF;
-  left:0px;
+  border-bottom: 2.55vw solid #5a98bf;
+  left: 0px;
   top: 0px;
-  font-size:16px;
+  font-size: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-right:15px solid transparent;
-  white-space:no-wrap;
-  text-align:center;
-  max-width:200px;
-  min-width:34.04vw;
+  border-right: 15px solid transparent;
+  white-space: no-wrap;
+  text-align: center;
+  max-width: 200px;
+  min-width: 34.04vw;
+  display: inline-block;
 }
 
 .iconHeaderRibbon {
   position: absolute;
-  color:#fff;
+  color: #fff;
   /* width: 1.064vw; */
   height: 2.94vh;
   left: 4.223vw;
@@ -59,25 +70,26 @@ body {
   /* bottom:2.3vh; */
   padding: 0;
   font-size: 1vw;
-  min-width:1.064vw;
-  max-width:200px;
+  min-width: 1.064vw;
+  max-width: 200px;
 }
+
 .textIconHeaderRibbon {
   position: absolute;
   /* width: 5.1vw; */
-  width:auto;
+  width: auto;
   font-size: 0.85vw;
-  color:#fff;
-  left:5.63vw;
-  font-family: 'Arial';
+  color: #fff;
+  left: 5.63vw;
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   top: 0.75vw;
   /* line-height:calc(8px + 5vh); */
-  padding: 0
+  padding: 0;
   /* identical to box height, or 200% */
-  
 }
+
 .mailIconHeaderRibbon {
   position: absolute;
   /* left:13.65vw; */
@@ -90,49 +102,64 @@ body {
   padding: 0;
   /* bottom: 16.67%; */
 }
-.textMailIconHeaderRibbon{
+
+.textMailIconHeaderRibbon {
   position: absolute;
   /* width: 5.1vw; */
-  width:auto;
+  width: auto;
   font-size: 0.85vw;
-  color:#fff;
+  color: #fff;
   /* left:15.063vw; */
-  left:18.2978vw;
-  font-family: 'Arial';
+  left: 18.2978vw;
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   top: 0.75vw;
   /* line-height:calc(8px + 5vh); */
-  padding: 0
+  padding: 0;
   /* identical to box height, or 200% */
 }
 
 .navbar {
   position: absolute;
-  top:3vw;
-  width: 100%;
-  font-family: 'Arial';
+  top: 3vw;
+  width: 96%;
+  font-family: "Arial";
   font-style: normal;
-  margin-left: 10px;
-  margin-right: 1000px;
+  margin-left: 2.7vw !important;
+  /* margin-right: 1000px;  */
+  justify-content: left;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* tulisan navbar */
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: #5a98bf;
+  font-weight: 2000;
+  /* font-size: 2rem; */
+  /* line-height: 26px;  */
+  font-size: 2vw;
+  line-height: 1.38vw;
 }
 
 .logoAsik {
-  width:48px;
-  height: 48px;
-  border-radius: 30px;
+  width: 5.32vw;
+  height: 5.32vw;
+  border-radius: 50px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
- 
-}
-.logoAsik:nth-child(1){
-  margin-left:0;
 }
 
-.form-control {
+.logoAsik:nth-child(1) {
+  margin-left: 0;
+}
+
+.searchBox {
   /* SearchBox */
-
   box-sizing: border-box;
-  
   /* Auto layout */
   display: flex;
   flex-direction: row;
@@ -140,41 +167,40 @@ body {
   align-items: center;
   padding: 8px 12px;
   gap: 14px;
-  
   position: absolute;
-  width: 215px;
-  height: 40px;
-  left: 1135px;
-  top: 16px;
+  width: 11.44vw;
+  height: 2.13vw;
+  left: auto;
+  right: 2em;
+  top: 0.85vw;
   background: transparent;
   /* white */
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 20px;
-
+  display: flex;
+  justify-content: right;
   /* background */
-  background-image:url(./asset/Icon/magnifying-glass-solid.svg);
+  background-image: url(./asset/Icon/magnifying-glass-solid.svg);
   /* padding-left:25px; */
   background-repeat: no-repeat;
-  background-position: 0.5rem 0.3rem;
-  background-size: 1.7rem;
-  color: #FFFFFF;
+  background-position: 1vw;
+  background-size: 1vw;
+  color: #ffffff;
   text-align: left;
   padding: 0.5rem;
-  padding-left:2.5rem
+  padding-left: 2.5rem;
 }
 
 .form-control::placeholder {
   color: white;
-
+  font-size: 0.75vw;
 }
 
-.form-control:active,
-.form-control:focus,
-.form-control:focus:active {
+.form-inline .searchBox:active,
+.form-inline .searchBox:focus,
+.form-inline .searchBox:focus:active {
   /* SearchBox */
-
   box-sizing: border-box;
-  
   /* Auto layout */
   display: flex;
   flex-direction: row;
@@ -182,39 +208,161 @@ body {
   align-items: center;
   padding: 8px 12px;
   gap: 14px;
-  
   position: absolute;
-  width: 215px;
-  height: 40px;
-  left: 1135px;
-  top: 16px;
+  width: 11.44vw;
+  height: 2.13vw;
+  left: auto;
+  right: 2em;
+  top: 0.85vw;
   background: transparent;
   /* white */
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: right;
+  /* background */
+  background-image: url(./asset/Icon/magnifying-glass-solid.svg);
+  /* padding-left:25px; */
+  background-repeat: no-repeat;
+  background-position: 1vw;
+  background-size: 1vw;
+  color: #ffffff;
+  text-align: left;
+  padding: 0.5rem;
+  padding-left: 2.5rem;
+}
+
+.form-inline .searchBox {
+  display: inline-block;
+  width: 11.44vw;
+  vertical-align: middle;
+  font-size: 0.75vw;
+}
+
+.containernya {
+  display: flex;
+}
+
+.nav-item {
+  /* justify-content: space-evenly; */
+  display: flex;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.28vw;
+  line-height: 1.38vw;
+}
+
+.customJumboTron {
+  /* Frame 4 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.53vw;
+  gap: 0.53vw;
+  position: absolute;
+  width: 38.62vw !important;
+  height: 11.28vw !important;
+  left: 1.6vw;
+  top: 10.63vw;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  background-color: transparent !important;
+  color: #ffffff;
+}
+
+.textHeaderJumboTron {
+  width: 37.55vw;
+  height: 10.212vw;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.55vw !important;
+  line-height: 3.617vw;
+  /* or 133% */
+  color: #ffffff;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.customeLead {
+  width: 36.28vw;
+  height: 5.106vw;
+
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.27vw;
+  line-height: 1.7vw;
+
+  /* or 133% */
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.navbar-toggler {
+  width: 2vw;
+  height: 2vw;
+  margin: 0;
+  margin-left: 0.5vw;
+}
+.navbar-toggler-icon {
+  background-image: none;
+  width: 0;
+  height: 0;
+}
+
+.buttonHubungiKami {
+  /* Frame 2 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 26px;
+  gap: 10px;
+
+  position: absolute;
+  width: 215px;
+  height: 64px;
+  left: 40px;
+  top: 468px;
+
+  /* biru muda garuda */
+  background: #5a98bf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 
-  /* background */
-  background-image:url(./asset/Icon/magnifying-glass-solid.svg);
-  padding-left:25px;
-  background-repeat: no-repeat;
-  background-position: 0.5rem 0.3rem;
-  background-size: 1.7rem;
-  color: #FFFFFF;
-  width:215px;
-  padding: 0.5rem;
-  padding-left:2.5rem
-}
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  /* width: 163px;
+  height: 32px; */
 
-.form-inline .form-control {
-  display: inline-block;
-  width: 215px;
-  vertical-align: middle;
-}
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
 
+  /* identical to box height, or 133% */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-
-

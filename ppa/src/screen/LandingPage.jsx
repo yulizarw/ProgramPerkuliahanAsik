@@ -12,9 +12,13 @@ import iconHandphone from '../asset/Icon/Communication/call.png'
 import iconEmail from '../asset/Icon/Communication/mail.png'
 
 //components
+//header
 import { GambarCarousel } from "../components/header/gambarCarousel";
 import { NavbarLanding } from "../components/header/navbar";
-import {SearchInput} from "../components/header/searchInput"
+import { SearchInput } from "../components/header/searchInput"
+import { JumboTron } from "../components/header/jumbotron";
+import { ButtonHubungiKami } from "../components/header/buttonHubungi";
+
 
 export const LandingPage = () => {
 
@@ -41,19 +45,18 @@ export const LandingPage = () => {
                     </div>
                 </div>
             </div>
-            <div class='box1'>
+            <div class='box1' >
                 <i class='fa fa-phone iconHeaderRibbon'></i>
                 <p class='textIconHeaderRibbon'>085810600103</p>
                 <i class='fa fa-envelope mailIconHeaderRibbon' style={{ color: 'white' }}></i>
                 <p class='textMailIconHeaderRibbon'>infoppa@baik.or.id</p>
             </div>
-            <div class='iconNavbar'>
-                <img img src="https://www.canva.com/design/DAFFj7LU3Y0/PlaxO8u0CmGRUxrX1Kyq8A/view?utm_content=DAFFj7LU3Y0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" ></img>
-            </div>
+
             {/* navbar */}
+            <NavbarLanding />
             <SearchInput />
-            {/* <NavbarLanding /> */}
-            
+            <JumboTron />
+            <ButtonHubungiKami />
         </>
     )
 }
