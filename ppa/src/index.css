@@ -239,6 +239,11 @@ body {
   font-size: 0.75vw;
 }
 
+/* tinggi gambar carousel */
+.carousel-inner {
+  height: 42.55vw;
+}
+
 .containernya {
   display: flex;
 }
@@ -328,30 +333,27 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 16px 26px;
-  gap: 10px;
+  padding: 0.85vw 1.382vw;
+  gap: 0.0531vw;
 
   position: absolute;
-  width: 215px;
-  height: 64px;
-  left: 40px;
-  top: 468px;
+  width: 11.436170212766vw;
+  height: 3.40425531914894vw;
+  left: 3.13829787234043vw;
+  top: 30.85vw;
 
   /* biru muda garuda */
   background: #5a98bf;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
+  box-shadow: 0px 0.213vw 0.213vw rgba(0, 0, 0, 0.15);
+  border-radius: 1.06382978723404vw;
 
   font-family: "Nunito", sans-serif;
   font-style: normal;
   /* width: 163px;
   height: 32px; */
-
-  font-family: "Work Sans";
-  font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.27659574468085vw;
+  line-height: 1.70212765957447vw;
 
   /* identical to box height, or 133% */
 
@@ -362,7 +364,347 @@ body {
   order: 0;
   flex-grow: 0;
 }
+
+.rectangle {
+  /* Rectangle 208 */
+
+  position: absolute;
+  width:100%;
+  height: 0.851063829787234vw;
+  left: 0px;
+  top: 42.5531914893617vw;
+
+  /* biru muda garuda */
+  background: #5a98bf;
+}
+
+.rectangleProgramKami {
+  /* Rectangle 336 */
+
+  position: absolute;
+  width: 1366px;
+  height: 4705px;
+  left: 0px;
+  top: 815px;
+  z-index: -1;
+  background: #ffffff;
+}
+
+.textProgramUnggulan {
+  /* Program Unggulan */
+
+  /* position: absolute; */
+  width: 20.16vw;
+  height: 3.14vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.7vw;
+
+  /* H2 */
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.08vw;
+  line-height: 3.14vw;
+
+  /* identical to box height, or 150% */
+
+  /* Co - Headline/Tittle */
+  color: #163063;
+}
+
+/* bentuk bulatan di program unggulan start */
+.progress {
+  width: 47.021vw;
+  height: 47.0212vw;
+  line-height: 47.0212vw;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+  /* margin-top:62px; */
+  z-index: -1;
+  position: absolute;
+}
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 15px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+/* .progress .progress-left {
+  left: 0;
+} */
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 3.404vw;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+.progress .progress-left .progress-bar {
+  left: 100%; /* UX Design */
+
+  position: absolute;
+  width: 128px;
+  height: 38px;
+  left: 188px;
+  top: 1070px;
+
+  /* H4 */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 38px;
+
+  /* identical to box height, or 150% */
+
+  /* Co - Headline/Tittle */
+  color: #163063;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+/* .progress .progress-right {
+  right: 0;
+} */
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 37.2340425531915vw;
+  border-bottom-left-radius: 37.2340425531915vw;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+/* .progress .progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #44484b;
+  font-size: 24px;
+  color: #fff;
+  line-height: 135px;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+} */
+.progress.blue .progress-bar {
+  border-color: #5a98bf;
+}
+.progress.blue .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar {
+  border-color: #fdba04;
+}
+.progress.yellow .progress-left .progress-bar {
+  animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.pink .progress-bar {
+  border-color: #ed687c;
+}
+.progress.pink .progress-left .progress-bar {
+  animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress.green .progress-bar {
+  border-color: #1abc9c;
+}
+.progress.green .progress-left .progress-bar {
+  animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+/* bentuk bulatan di program unggulan end */
+.customCard {
+  /* Rectangle 192 */
+
+  /* position: absolute; */
+  width: 25.53vw;
+  height: 20.43vw;
+  /* height: auto; */
+  left: 18.957446809vw;
+  /* right:30vw; */
+  /* top: 6.914vw; */
+  padding: 0;
+  justify-items: space-around;
+  margin: 0;
+  /* Whit */
+  background: #ffffff;
+  display: inline-block;
+  /* Effect-1 */
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5319vw;
+  /* align-items: center; */
+}
+.card {
+  padding: 15px;
+  display: flex;
+}
+
+.card-columns{
+  display: grid;
+  grid-template-columns: repeat(2, 0.3fr);
+  
+  grid-auto-rows: auto;
+  grid-gap: 2rem;
+  /* grid-column-gap: 4.255vw; */
+  /* grid-row-gap: 10px; */
+  overflow: hidden;
+}
+
+
+.customCardTitle {
+  /* UX Design */
+  /* position: absolute; */
+  width: 10.8085vw;
+  height: 2.0212vw;
+  left: 1.32978723404255vw;
+  margin-bottom: 1vw;
+  /* H4 */
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.32978723404255vw;
+  text-align: center;
+  /* line-height: 2.0212vw; */
+  /* identical to box height, or 150% */
+  /* Co - Headline/Tittle */
+  color: #163063;
+  
+}
+.cardBodyCustom {
+  /* margin-top: 1.64893617021277wv; */
+  padding: 0 !important;
+  /* height:500px; */
+  margin-bottom: 0;
+  
+}
+
+
+.customCardSub {
+  /* Mobile App, Website */
+
+  /* position: absolute; */
+  width: 6.80851063829787vw;
+  height: 1.06382978723404vw;
+  left: 1.32978723404255vw;
+  /* margin-top: 4.265957446808511vw; */
+  margin: 0;
+  /* H7 */
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.6808510638298vw;
+  line-height: 1.01063829787234vw;
+
+  /* identical to box height, or 150% */
+
+  /* Co - Headline/Tittle */
+  color: #163063;
+}
+
+
+.customCardText {
+  /* position: absolute; */
+  width: 17.2872340425532vw;
+  height: 4.09574468085106vw;
+  left: 1,329787234vw;
+  /* margin-top: 9,521276596vw; */
+  /* margin: 0; */
+  margin-bottom:2vw;
+  text-align: justify;
+  /* H6 */
+  font-family: "Poppins",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.851063829787234vw;
+  line-height: 1.27659574468085vw;
+
+  /* or 150% */
+
+  /* Co - Headline/Tittle */
+  color: #163063;
+}
+
+.btnCustom {
+  /* Rectangle 65 */
+
+  /* position: absolute; */
+
+  /* Co - Primary */
+  background: #5a98bf;
+  border-radius: 0.265957446808511vw;
+  /* Read More */
+  width:8,510638298vw !important;
+  height:2,14787234vw !important;
+
+  /* position: absolute; */
+  /* left: 11.11%; */
+  /* right: 35.89%; */
+  /* top: 26%; */
+  /* bottom: 24%; */
+
+  /* H5-20px */
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.06382978723404vw;
+  line-height: 123.6%;
+  margin :0;
+  /* or 25px */
+
+  /* White */
+  color: #ffffff;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* .card {
+  color: white;
+  float: left;
+  width: calc(50% - 163px);
+  left:163px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  height: 200px;
+} */
+/* .card p {
+  font-size: 18px;
+} */
+/* .cardContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* 
+@media screen and (max-width: 600px) {
+  .card {
+     width: 35%;
+  }
+} */

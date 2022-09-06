@@ -19,6 +19,10 @@ import { SearchInput } from "../components/header/searchInput"
 import { JumboTron } from "../components/header/jumbotron";
 import { ButtonHubungiKami } from "../components/header/buttonHubungi";
 
+//content
+import { SetengahLingkaranUnggulan } from "../components/content/setengahLingkaranUnggulan";
+import { CardProgramUnggulan } from "../components/content/cardProgramUnggulan";
+
 
 export const LandingPage = () => {
 
@@ -57,6 +61,17 @@ export const LandingPage = () => {
             <SearchInput />
             <JumboTron />
             <ButtonHubungiKami />
+            <div class='rectangle' />
+         
+            <center><h4 class="textProgramUnggulan">Program Unggulan</h4>
+            </center>
+
+         
+            <SetengahLingkaranUnggulan />
+            <CardProgramUnggulan />
+        
+
+
         </>
     )
 }
